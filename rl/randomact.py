@@ -1,3 +1,8 @@
+'''
+This module contains class implementing random action.
+A valid random action will be drawn when requested.
+'''
+
 from rl.rlbase import RL
 import random
 

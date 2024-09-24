@@ -15,6 +15,12 @@ from rl.rlbase import RL, DecayingFloat
 
 class Q_Learning(RL):
     '''
+    It implements Q-Learning algorithm. The constructor takes two inputs:
+    - `num_actions` specifies action spaces by providing the number of 
+      possible actions
+    - `exploration` is a flag specifying whether the algorithm should run
+      in exploration-exploitation mode (when set to True), or in full 
+      exploitation mode with no further exploration (when set to False)
     '''
 
     def __init__(self, num_actions, exploration=True):

@@ -86,7 +86,10 @@ Run the simulation by:
 ```bash
 python uav.py
 ```
-By default, the simulation will run Q-Learning algorithm in animated stateless mode without showing any result on the terminal.
+
+By default, the simulation will run Q-Learning algorithm in stateless mode with animation. The folder also contains the following saved models. To see the UAV trajectory produced by the policy of a saved model, simply run the simulation in testing mode.
+
+- Q-Learning model `Q-Learning-load.json` that has been trained for over 800000 episodes using Q-Learning algorithm.
 
 ### Scenario Parameters
 
@@ -119,16 +122,16 @@ Note that the paper also applies penalty when the UAV moves outside of the map. 
 
 ## The Results
 
-We show the results of the ML performance below. Similar to the observation of the authors, the Q-learning algorithm converged slowly and reached the optimal trajectory at around 800,000 rounds (or episodes). 
+We show the results of the ML performance below. Similar to the observation of the authors, the Q-learning algorithm converged slowly and reached the optimal trajectory at around 800000 rounds (or episodes). 
 
 We also included the results of DQN. As can be seen, DQN converges significantly faster which is indicated by the paper and confirmed by our experiments.
 
 <table>
   <tr>
     <th>Learning convergence<br>
-        (Q-learning and SARSA)</th>
+        (Q-learning and DQN)</th>
     <th>Illustration of optimal trajectory with Q-learning<br>
-        (reward = 2146.56 after 800,000 rounds)</th>
+        (reward = 2146.56 after 800000 rounds)</th>
   </tr>
   <tr>
     <td>
@@ -140,7 +143,7 @@ We also included the results of DQN. As can be seen, DQN converges significantly
   </tr>
 </table>
 
-Q-learning improves very slowly in the last 100,000 rounds:
+Q-learning improves very slowly in the last 100000 rounds:
 ```
 round   reward
 ======  =======

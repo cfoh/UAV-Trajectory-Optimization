@@ -1,16 +1,21 @@
 '''
-
+The module contains the a base class for the UAV environment. 
+It also defines the specifications of `Action` and `State` classes.
 '''
 
 import pygame
 from abc import abstractmethod
 
 class Action:
-    '''This class defines the Action.'''
+    '''
+    This class defines the Action.
+    '''
     pass
 
 class State:
-    '''This class defines the system state.'''
+    '''
+    This class defines the system state.
+    '''
 
     def valid_actions(self):
         '''It returns a list or range of valid actions. 
@@ -26,6 +31,30 @@ class State:
 
 
 class UAVEnvBase:
+    '''
+    This is the base class for the UAV environment. It defines the 
+    following constants:
+    - EVENT_QUIT: when a close event is triggered by users
+    - EVENT_MOUSEBUTTONDOWN: when a mouse button down event is detected
+    - MOUSE_LEFT_BUTTON: check if a mouse button down is the left button
+    - MOUSE_MIDDLE_BUTTON: check if a mouse button down is the middle button
+    - MOUSE_RIGHT_BUTTON: check if a mouse button down is the right button
+    - MOUSE_SCROLL_UP: check if a mouse button down is the 
+      scrolling up of mouse wheel
+    - MOUSE_SCROLL_DOWN: check if a mouse button down is the 
+      scrolling down of mouse wheel
+
+    It also defines the following methods:
+    - reset(): call it to reset the episode
+    - step(action): call it to provide an action for the environment to
+      perform the action and return a new state and associated reward
+    - render(): call it to render the environment onto the screen
+    - get_event(): call it to detect a user event
+    - set_message(message): call it with a message to show a message when
+      rendering the environment
+    - close(): call it to properly terminate the environment and release 
+      all resources.
+    '''
 
     ## event constants
     EVENT_QUIT            = pygame.QUIT
