@@ -1,4 +1,4 @@
-# UAV Trajectory Optimization
+# UAV Trajectory Optimization using Reinforcement Learning
 
 The aim of this project is to repeat the experiments given in the following paper and further enhance the algorithms for improved performance.
 
