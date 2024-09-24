@@ -128,7 +128,7 @@ We also included the results of SARSA. Interestingly, SARSA fails to discover th
     <th>Learning convergence<br>
         (Q-learning and SARSA)</th>
     <th>Illustration of optimal trajectory with Q-learning<br>
-        (reward = 2181.45 after 800,000 rounds)</th>
+        (reward = 2146.56 after 800,000 rounds)</th>
   </tr>
   <tr>
     <td>
