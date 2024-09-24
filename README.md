@@ -121,7 +121,7 @@ Note that the paper also applies penalty when the UAV moves outside of the map. 
 
 We show the results of the ML performance below. Similar to the observation of the authors, the Q-learning algorithm converged slowly and reached the optimal trajectory at around 800,000 rounds (or episodes). 
 
-We also included the results of SARSA. Interestingly, SARSA fails to discover the optimal path and return to the final landing cell.
+We also included the results of DQN. As can be seen, DQN converges significantly faster which is indicated by the paper and confirmed by our experiments.
 
 <table>
   <tr>
