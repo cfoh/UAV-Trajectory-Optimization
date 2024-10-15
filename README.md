@@ -135,7 +135,10 @@ We also included the results of DQN. As can be seen, DQN converges significantly
   </tr>
   <tr>
     <td>
-      <img src="https://github.com/user-attachments/assets/013c8a37-6764-443a-a72d-fe7ffaca4a79" width="404">
+      Our result: 
+      <img src="https://github.com/user-attachments/assets/013c8a37-6764-443a-a72d-fe7ffaca4a79" width="404"><br>
+      Result from the paper (given in Fig. 3):
+      <img src="https://github.com/user-attachments/assets/184f5c58-7b29-48bc-96ed-e226c25104e9" width="404">
     </td>
     <td>
       <img src="https://github.com/user-attachments/assets/12904369-0865-406c-970e-d165c962fc4f" width="402">
