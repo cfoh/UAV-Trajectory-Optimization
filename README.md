@@ -122,6 +122,8 @@ Note that the paper also applies penalty when the UAV moves outside of the map. 
 
 ## The Results
 
+### Q-Learning versus DQN
+
 We show the results of the ML performance below. Similar to the observation of the authors, the Q-learning algorithm converged slowly and reached the optimal trajectory at around 800000 rounds (or episodes). 
 
 We also included the results of DQN. As can be seen, DQN converges significantly faster which is indicated by the paper and confirmed by our experiments.
@@ -137,7 +139,7 @@ We also included the results of DQN. As can be seen, DQN converges significantly
     <td>
       Our result:<br>
       <img src="https://github.com/user-attachments/assets/013c8a37-6764-443a-a72d-fe7ffaca4a79" width="404"><br>
-      Result from the paper (given in Fig. 3):<br>
+      Result from the paper (see Fig. 3):<br>
       <img src="https://github.com/user-attachments/assets/184f5c58-7b29-48bc-96ed-e226c25104e9" width="404">
     </td>
     <td>
