@@ -27,8 +27,9 @@ To code run an episode can be as simple as:
 '''
 
 from uavenv.uav2dgrid import UAVEnv
-from rl.randomact import RandomAction
-from rl.qlearning import Q_Learning
+#from rl.randomact import RandomAction
+#from rl.qlearning import Q_Learning
+from rl import RandomAction, Q_Learning, SARSA
 
 ###########################################
 ## switches
@@ -93,6 +94,7 @@ for description in info["description"].values():
 ## pick a policy to run
 #ai = RandomAction()
 ai = Q_Learning(len(env.action_space), exploration=EXPLORATION_FLAG)
+#ai = SARSA(len(env.action_space), exploration=EXPLORATION_FLAG)
 
 print(f"Running simulation using {ai.name} algorithm.")
 

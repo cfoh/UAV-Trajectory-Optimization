@@ -175,3 +175,32 @@ round   reward
 820000  2146.56
  ...      ...
 ```
+
+### SARSA
+
+We also tried SARSA. We noticed that SARSA performs poorly for this application. We made the following observations:
+- It struggles to find the way to return to the final landing cell on time. It took many iterations to discover the path to return on time.
+- Even after it has found the way to the final landing cell on time, it did not consistently exploit the learned result. 
+- It did not monotonically improves its the outcome over the time of learning.
+
+We managed to captured a model where the UAV will return to the final landing cell on time. The model is given in `SARSA-load.json`. However, if we use the model to continue running the simulation, as shown below, we do not see the reward monotonically increased over the time, instead the reward fluctuated. Besides, the UAV only occasionally (and not persistently) returned to the finally landing cell on time.
+
+```
+Episode   Reward    Flight time
+-------   ------    ------------
+1180000   1777.22   50 (clashed)
+1190000   1766.56   50 (clashed)
+1200000   1780.60   50 (clashed)
+1210000   1785.22   50 (clashed)
+1220000   1971.06   48 (returned early)
+1230000   1737.59   50 (clashed)
+1240000   1749.52   50 (clashed)
+1250000   1776.08   50 (clashed)
+1260000   2076.06   50 (returned on time)
+1270000   2123.05   50 (returned on time)
+1280000   1743.71   50 (clashed)
+1290000   2099.15   50 (returned on time)
+1300000   1766.77   50 (clashed)
+1310000   1738.87   50 (clashed)
+...
+```
