@@ -150,30 +150,30 @@ We also included the results of DQN. As can be seen, DQN converges significantly
 
 Q-learning improves very slowly in the last 100000 rounds:
 ```
-round   reward
-======  =======
- ...      ...
-630000  2144.75
-640000  2145.42
-650000  2145.42
-660000  2145.44
-670000  2145.70
-680000  2145.70
-690000  2145.70
-700000  2145.70
-710000  2145.70
-720000  2145.92
-730000  2145.92
-740000  2145.92
-750000  2145.90
-760000  2146.04
-770000  2146.32
-780000  2146.32
-790000  2146.32
-800000  2146.32
-810000  2146.56
-820000  2146.56
- ...      ...
+Episode  Reward   Flight time
+=======  =======  ===========
+ ...       ...        ...
+630000   2144.75  50 (returned on time)
+640000   2145.42  50 (returned on time)
+650000   2145.42  50 (returned on time)
+660000   2145.44  50 (returned on time)
+670000   2145.70  50 (returned on time)
+680000   2145.70  50 (returned on time)
+690000   2145.70  50 (returned on time)
+700000   2145.70  50 (returned on time)
+710000   2145.70  50 (returned on time)
+720000   2145.92  50 (returned on time)
+730000   2145.92  50 (returned on time)
+740000   2145.92  50 (returned on time)
+750000   2145.90  50 (returned on time)
+760000   2146.04  50 (returned on time)
+770000   2146.32  50 (returned on time)
+780000   2146.32  50 (returned on time)
+790000   2146.32  50 (returned on time)
+800000   2146.32  50 (returned on time)
+810000   2146.56  50 (returned on time)
+820000   2146.56  50 (returned on time)
+ ...       ...        ...
 ```
 
 ### SARSA
@@ -187,7 +187,7 @@ We managed to captured a model where the UAV will return to the final landing ce
 
 ```
 Episode   Reward    Flight time
--------   ------    ------------
+=======   =======   ============
 1180000   1777.22   50 (clashed)
 1190000   1766.56   50 (clashed)
 1200000   1780.60   50 (clashed)
