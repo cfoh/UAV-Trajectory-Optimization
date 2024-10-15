@@ -135,9 +135,9 @@ We also included the results of DQN. As can be seen, DQN converges significantly
   </tr>
   <tr>
     <td>
-      Our result: 
+      Our result:<br>
       <img src="https://github.com/user-attachments/assets/013c8a37-6764-443a-a72d-fe7ffaca4a79" width="404"><br>
-      Result from the paper (given in Fig. 3):
+      Result from the paper (given in Fig. 3):<br>
       <img src="https://github.com/user-attachments/assets/184f5c58-7b29-48bc-96ed-e226c25104e9" width="404">
     </td>
     <td>
